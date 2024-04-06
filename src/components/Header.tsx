@@ -1,4 +1,4 @@
-import { Button, Navbar, NavbarBrand, NavbarCollapse, NavbarLink } from "flowbite-react";
+import { Navbar, NavbarBrand, NavbarCollapse, NavbarLink } from "flowbite-react";
 import Link from "next/link";
 
 export default function Header() {
