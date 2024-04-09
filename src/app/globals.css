@@ -12,11 +12,6 @@
   }
 }
 
-body {
-  background-color: var(--background-color);
-  @apply text-sm;
-}
-
 a:hover {
   color: rgb(59 130 246);
 }
@@ -26,3 +21,9 @@ a:hover {
     text-wrap: balance;
   }
 }
+
+body {
+  background-color: var(--background-color);
+  @apply text-sm;
+}
+

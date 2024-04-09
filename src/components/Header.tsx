@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <>
-      <nav className="bg-white border-gray-200 dark:bg-gray-900 flex justify-center">
+      <nav className="bg-white border-gray-200 dark:bg-gray-900 flex justify-center fixed h-12 w-full top-0">
         <div className="flex items-center justify-between pt-4 pb-4 w-9/12 pr-4">
           <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
               <img src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg?size=338&ext=jpg&ga=GA1.1.1700460183.1712275200&semt=ais" className="h-8" alt="Flowbite Logo" />
