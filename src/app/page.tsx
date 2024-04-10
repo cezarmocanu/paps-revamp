@@ -1,3 +1,5 @@
+import { CategoriesExpandableList } from "@/components/CategoriesExpandableList";
+import { CategoriesMenu } from "@/components/CategoriesMenu";
 import Header from "@/components/Header";
 import ListItemCard from "@/components/ListItemCard";
 
@@ -6,10 +8,12 @@ export default function Home() {
   return (
     <>
       <div className="flex justify-center pb-4">
-        <div className="pt-3 flex flex-row max-w-75">
-          <div className="bg-red-500 w-96">
+        <div className="pt-3 flex flex-row w-3/4">
+          {/* <div className="bg-red-500 w-96">
             Hierarchy
-          </div>
+          </div> */}
+          {/* <CategoriesMenu/> */}
+          <CategoriesExpandableList/>
           <div className="flex flex-col w-full gap-2">
             {items.map(item => <ListItemCard className="rounded-md" key="{item}"/>)}
           </div>

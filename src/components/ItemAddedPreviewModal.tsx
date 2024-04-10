@@ -1,7 +1,6 @@
 import { Modal } from "flowbite-react";
 import { useState } from "react";
 import { Button } from "./boilerplate/Button";
-import ListItemCard from "./ListItemCard";
 import PreviewItemAdded from "./PreviewItemAdded";
 
 export const ItemAddedPreviewModal = () => {
