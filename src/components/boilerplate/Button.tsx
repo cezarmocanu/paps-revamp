@@ -1,25 +1,36 @@
+'use client';
 import clsx from "clsx"
 import { FC, PropsWithChildren } from "react"
 
 interface Props {
-  color?: string
-  hoverColor?: string
+  isPrimary?: boolean
+  onClick?: () => void
   text?: string
 }
 
 export const Button:FC<PropsWithChildren<Props>> =({ 
-  color='bg-blue-500', 
-  hoverColor='bg-blue-700',
-  text='',
-  children
-}) =>{
+  isPrimary = true,
+  text = '',
+  children,
+  onClick
+}) => {
+  const stylesForPrimary = () => {
+    return isPrimary && 'text-white bg-blue-500 hover:bg-blue-700'
+  }
+
+  const stylesForSecondary = () => {
+    return !isPrimary && 'bg-white text-blue-500 border border-blue-500 hover:text-blue-800'
+  }
+
   return (
-    <button className={clsx([
-      'text-white flex h-min gap-1 rounded py-2 px-6 transition-all',
-      color,
-      `hover:${hoverColor}`,
-      'text-white'
-    ])}>
+    <button 
+      className={clsx([
+        'flex h-min gap-1 rounded py-2 px-6 transition-all',
+        stylesForPrimary(),
+        stylesForSecondary()
+      ])}
+      onClick={onClick}
+    >
       {children}
       <span>{text}</span>
     </button>
