@@ -5,7 +5,7 @@ export default function Home() {
   const items = [1,2,3,4,5,6,7,8,9,10]
   return (
     <>
-      <div className="flex justify-center">
+      <div className="flex justify-center pb-4">
         <div className="pt-3 flex flex-row max-w-75">
           <div className="bg-red-500 w-96">
             Hierarchy
