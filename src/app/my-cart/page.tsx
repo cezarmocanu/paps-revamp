@@ -41,7 +41,7 @@ export default function MyCartPage() {
                 <span className="font-medium">Total:</span>
                 <span className="font-semibold text-base">600 RON</span>
               </div>
-              <Button text="Cere oferta" styles="w-full justify-center bg-lime-500 hover:bg-lime-700"/>
+              <Button text="Continua" styles="w-full justify-center bg-blue-500 hover:bg-blue-700"/>
             </div>
             
           </div>
