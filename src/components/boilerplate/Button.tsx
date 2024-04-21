@@ -6,13 +6,15 @@ interface Props {
   isPrimary?: boolean
   onClick?: () => void
   text?: string
+  styles?: string
 }
 
 export const Button:FC<PropsWithChildren<Props>> =({ 
   isPrimary = true,
   text = '',
   children,
-  onClick
+  onClick,
+  styles
 }) => {
   const stylesForPrimary = () => {
     return isPrimary && 'text-white bg-blue-500 hover:bg-blue-700'
@@ -27,7 +29,8 @@ export const Button:FC<PropsWithChildren<Props>> =({
       className={clsx([
         'flex h-min gap-1 rounded py-2 px-6 transition-all',
         stylesForPrimary(),
-        stylesForSecondary()
+        stylesForSecondary(),
+        styles
       ])}
       onClick={onClick}
     >

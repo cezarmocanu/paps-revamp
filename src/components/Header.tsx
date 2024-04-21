@@ -65,15 +65,17 @@ const Header = () => {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span className="text-xs">Cosul meu</span>
+                    <a href="/my-cart">
+                      <span className="text-xs">Cosul meu</span>
+                    </a>
                   </div>
                 </li>
               </ul>
             </div>
           </div>
-          <div className="bg-white justify-center items-center flex px-2 py-2.5 w-full border border-slate-160 hover:text-blue-700">
-            <div className="flex justify-end lg:min-w-[1024px] md:min-w-[768px] cursor-pointer" onClick={handleModalOpen}>
-              <span>Contact</span>
+          <div className="bg-white justify-center items-center flex px-2 py-2.5 w-full border border-slate-160">
+            <div className="flex justify-end lg:min-w-[1024px] md:min-w-[768px] ">
+              <span className="cursor-pointer hover:text-blue-700" onClick={handleModalOpen}>Contact</span>
             </div>
           </div>
         </nav>
